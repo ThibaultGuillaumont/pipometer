@@ -48,9 +48,11 @@ footer {
      bottom: 10px;
      width: 100%;
   text-align: center;
+  padding-top : 5px;
   padding-left: 16px;
 }
 
 footer button {
-  width : 100%
+  width : 100%;
+  margin-top: 5px;
 }
