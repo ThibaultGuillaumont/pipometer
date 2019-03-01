@@ -8,7 +8,7 @@ svg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 600px
+  max-width: 600px;
 }
 
 .filler {
@@ -22,7 +22,12 @@ svg {
 
  path { transition: fill 1s ease; }
 
-
+h1 {
+  color : white;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  width : 100%
+}
 
 .red_alert {
   animation-name: example;
@@ -35,4 +40,17 @@ svg {
   0%   {background: red;}
   50%  {background: darkred;}
   100%   {background: red;}
+}
+
+footer {
+  position: fixed;
+     left: 0;
+     bottom: 10px;
+     width: 100%;
+  text-align: center;
+  padding-left: 16px;
+}
+
+footer button {
+  width : 100%
 }

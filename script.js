@@ -8,6 +8,7 @@ angle = 0;
 speed = 0;
 target_fixed = 20;
 count =0;
+flag =0;
 
 function up() {
   if (target_fixed<180) {
@@ -37,20 +38,27 @@ function changeShadow(angle) {
   shadow = document.getElementById('shadow');
   bottom = document.getElementById("bottom_captor");
   filler = document.getElementById("filler");
-if (angle<50) {
+
+if (angle<50 && flag != 1) {
   shadow.setAttribute("style", "fill:rgba(0,255,0,0.1)");
   bottom.setAttribute("style", "fill:PaleGreen")
-} else if (angle<140) {
+  flag = 1;
+
+} else if (angle<140 && angle>50 && flag != 2) {
   shadow.setAttribute("style", "fill:rgba(150,100,0,0.1)");
   bottom.setAttribute("style", "fill:SandyBrown")
-} else if (angle<160){
+    flag = 2;
+} else if (angle<160 && angle>140 && flag != 3){
   shadow.setAttribute("style", "fill:rgba(255,0,0,0.1)");
   bottom.setAttribute("style", "fill:tomato")
   filler.classList.remove("red_alert");
-} else {
+  flag = 3;
+} else if (angle>160 && flag != 4 ){
   filler.className += " red_alert";
-}
+  flag = 4;
+} else {
 
+  }
 }
 
 function step() {
