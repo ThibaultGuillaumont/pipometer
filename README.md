@@ -2,6 +2,8 @@
 
 ## Monitor the bullshit around you
 
+![le pipometre](main.png)
+
 Finally a graphical way to express to your surroundings what you *really* think of the stuffs that comes out of their mouths
 
 ## WHY ?
