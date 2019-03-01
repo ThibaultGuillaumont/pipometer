@@ -1,0 +1,37 @@
+body {
+  background: #eee;
+}
+
+svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.filler {
+  background: #20B7AF;
+  position: absolute;
+  bottom: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+ path { transition: fill 1s ease; }
+
+
+
+.red_alert {
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-iteration-count:infinite;
+}
+
+
+@keyframes example {
+  0%   {background: red;}
+  50%  {background: darkred;}
+  100%   {background: red;}
+}
