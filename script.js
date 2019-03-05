@@ -28,11 +28,6 @@ function down() {
 }
 }
 
-function chris() {
-  target_fixed = 170;
-
-}
-
 function arrow_control(event) {
   var x = event.which || event.keyCode;
   console.log(x);
