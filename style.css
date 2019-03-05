@@ -56,4 +56,22 @@ footer {
 footer button {
   width : 100%;
   margin-top: 5px;
+
+}
+
+.slider {
+  width: 50%;
+  margin-left: 25%;
+  height: 300px;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+  color : white;
+  font-size: 64px;
 }

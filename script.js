@@ -9,16 +9,22 @@ speed = 0;
 target_fixed = 20;
 count =0;
 flag =0;
+bar = document.getElementById("slider");
+
 
 function up() {
   if (target_fixed<180) {
   target_fixed = target_fixed+10;
+  bar.scrollLeft = (target_fixed/180*4)*bar.clientWidth;
+  console.log(bar.scrollLeft);
 }
 }
 
 function down() {
     if (target_fixed>10) {
   target_fixed = target_fixed-10;
+  bar.scrollLeft = (target_fixed/180*4)*bar.clientWidth;
+  console.log(bar.scrollLeft);
 }
 }
 
@@ -33,6 +39,13 @@ function arrow_control(event) {
   if (x==38) {up()};
   if (x==40) {down()};
 }
+
+function get_scroll() {
+bar = document.getElementById("slider");
+//return Math.round((bar.scrollLeft/bar.clientWidth)+1)/5*170;
+return ((bar.scrollLeft/bar.clientWidth))/4*180;
+}
+
 
 function changeShadow(angle) {
   shadow = document.getElementById('shadow');
@@ -63,7 +76,9 @@ if (angle<50 && flag != 1) {
 
 function step() {
   count++;
+  target_fixed = get_scroll();
   target = target_fixed + 5*Math.sin(count/180*Math.PI*5)+3*Math.sin(count/180*Math.PI*3);
+
 
   let speed = (target-angle)/10;
 
