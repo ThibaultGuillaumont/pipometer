@@ -4,14 +4,18 @@
 
 ![le pipometre](main.png)
 
-Finally a graphical way to express to your surroundings what you *really* think of the stuffs that comes out of their mouths
+Finally a graphical way to express to your surroundings what you *really* think of the stuffs that comes out of their mouths.
+
+You can control the level by :
+  - **DESKTOP** : UP and DOWN arrow
+  - **MOBILE** : Scroll left and right to increase and decrease the value.
 
 ##ONLINE VERSION
-Got to : [Online version](https://thibaultguillaumont.github.io/pipometer/)
+Go to : [Online version](https://thibaultguillaumont.github.io/pipometer/)
 
 ## WHY ?
 
-Why is a question for the philosopher. 'cos, *WE*, the engineers have no time to go beyoung the rippled surface of the soul.
+Why is a question for the philosopher. 'cos, *WE*, the engineers have no time to go beyound the rippled surface of the soul.
 
 But, basically, to much bullshit around.
 
