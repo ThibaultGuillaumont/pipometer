@@ -16,8 +16,9 @@ var bar = document.getElementById("slider");
 function up() {
   if (target_fixed<180) {
   target_fixed = target_fixed+10;
+  console.log("target=" +   target_fixed);
   bar.scrollLeft = (target_fixed/180*4)*bar.clientWidth;
-  console.log(bar.scrollLeft);
+  console.log("hey" + bar.scrollLeft);
 }
 }
 
