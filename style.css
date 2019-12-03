@@ -75,3 +75,24 @@ footer button {
   color : red;
   font-size: 64px;
 }
+
+/* width */
+::-webkit-scrollbar {
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey;
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: steelblue;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: navy;
